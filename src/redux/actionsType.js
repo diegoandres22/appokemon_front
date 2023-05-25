@@ -21,3 +21,7 @@ export const DELETE_POKEMON = "DELETE_POKEMON";
 export const GET_TYPES = "GET_TYPES";
 
 export const POST_TYPES = "POST_TYPES";
+
+export const DELETE_STATE = "DELETE_STATE";
+
+// DELETE_STATE

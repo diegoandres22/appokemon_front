@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { GET_POKEMONS, NEXT_PAGE, BACK_PAGE, ORDER_POKEMONS, FILTER_POKEMONS, BY_BASE_LOCAL, GET_POKEMON_id, GET_POKEMON_NAME, GET_TYPES } from './actionsType';
+import { GET_POKEMONS, NEXT_PAGE, BACK_PAGE, ORDER_POKEMONS, FILTER_POKEMONS, BY_BASE_LOCAL, GET_POKEMON_id, GET_POKEMON_NAME, GET_TYPES, DELETE_STATE } from './actionsType';
 
 
 export const getPokemons = () => {
@@ -54,12 +54,16 @@ export const getPokemonByName = (name) => {
     return async (dispatch) => {
         const resp = await axios.get(`/pokemon/get/?nombre=${name}`);
         const pokemonByName = resp.data;
-
-        console.log(pokemonByName);
         dispatch({ type: GET_POKEMON_NAME, payload: pokemonByName });
     };
 };
+// export const deleteStateG = () => {
 
+//     return  (dispatch) => {
+
+//       return dispatch({ type: DELETE_STATE });
+//     };
+// };
 
 export const postPokemon = (pokemon) => {
     return async () => {

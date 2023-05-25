@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 
 const View = ({ id, nombre, imagen, types, vida, ataque, defensa, velocidad, altura, peso }) => {
 
+    id?.length > 30
+        ? types = types?.map(typ => typ.name)
+        : types = types?.map(tip => tip);
 
     const dispatch = useDispatch();
 
@@ -21,7 +24,6 @@ const View = ({ id, nombre, imagen, types, vida, ataque, defensa, velocidad, alt
 
 
         <div className="detailCont" >
-
 
             <div className="atrascont">
                 <button className=' flechacont'>
@@ -38,7 +40,6 @@ const View = ({ id, nombre, imagen, types, vida, ataque, defensa, velocidad, alt
                     </Link>}
             </div>
 
-
             <div className="target">
                 <h2>detalle del pokemon {nombre}</h2>
                 <p>vida: {vida}</p>
@@ -47,7 +48,14 @@ const View = ({ id, nombre, imagen, types, vida, ataque, defensa, velocidad, alt
                 <p>velocidad: {velocidad}</p>
                 <p>altura: {altura}</p>
                 <p>peso: {peso}</p>
-                <p>de tipo: {types}</p>
+                <div className="tiposdetail">
+                    <p>tipo:</p>
+                    {types?.map(tip => {
+                        return (
+                            <p className='tipdetail' >{tip}</p>
+                        )
+                    })}
+                </div>
             </div>
 
 

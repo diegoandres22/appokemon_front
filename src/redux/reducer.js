@@ -1,4 +1,4 @@
-import { GET_POKEMONS, BACK_PAGE, NEXT_PAGE, ORDER_POKEMONS, FILTER_POKEMONS, BY_BASE_LOCAL, GET_POKEMON_id, GET_POKEMON_NAME, POST_POKEMON, DELETE_POKEMON, GET_TYPES, POST_TYPES } from "./actionsType";
+import { GET_POKEMONS, BACK_PAGE, NEXT_PAGE, ORDER_POKEMONS, FILTER_POKEMONS, BY_BASE_LOCAL, GET_POKEMON_id, GET_POKEMON_NAME, POST_POKEMON, DELETE_POKEMON, GET_TYPES, POST_TYPES, DELETE_STATE } from "./actionsType";
 const initialState = {
     aPokemon: [],
     pokemons: [],
@@ -29,6 +29,7 @@ const rootReducer = (state = initialState, { type, payload }) => {
                 return {
                     ...state,
                     location: payload,
+                    page: 1,
                     pokemonsFyO: state.pokemons.filter(poke => poke.id.length > 15)
                 };
             }
@@ -38,12 +39,14 @@ const rootReducer = (state = initialState, { type, payload }) => {
                 return {
                     ...state,
                     location: payload,
+                    page: 1,
                     pokemonsFyO: [...filtId]
                 };
             } if (payload === "todos") {
                 return {
                     ...state,
                     location: payload,
+                    page: 1,
                     pokemonsFyO: [...state.pokemons]
                 }
             }
@@ -187,7 +190,12 @@ const rootReducer = (state = initialState, { type, payload }) => {
             return {
                 ...state,
             };
-            
+
+        // case DELETE_STATE:
+        //     return {
+        //         ...state,
+        //         aPokemon: []
+        //     };
         default:
             return { ...state };
 

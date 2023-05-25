@@ -20,7 +20,7 @@ const SearchBar = () => {
 
         try {
 
-            const response = await axios.get(`/pokemon/get/?nombre=${poke}`);
+            const response = await axios.get(`http://localhost:3001/pokemon/get/?nombre=${poke}`);
 
             if (response.data.id) {
 
