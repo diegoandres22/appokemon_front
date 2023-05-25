@@ -1,0 +1,79 @@
+.detailCont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url("../../assets/landin.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgtarget {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.imgtarget button {
+    margin: auto;
+}
+
+.imgtarget img {
+    height: 400px;
+
+}
+.targetimg{
+    position: relative;
+    display: flex;
+}
+
+
+
+.target {
+
+position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 20px;
+    text-shadow: 0 0 10px rgb(163, 163, 163);
+
+}
+
+.atrascont {
+    width: 10%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.flechacont {
+    transform: rotate(90deg);
+    background: transparent;
+    text-decoration: none;
+    border: none;
+}
+
+.flecha {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+}
+.tiposdetail{
+    display: flex;
+}
+.tipdetail{
+    margin: auto 2px;
+    border: 2px solid black;
+    border-radius: 5px;
+}

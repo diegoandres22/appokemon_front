@@ -1,0 +1,80 @@
+:root {
+    --fontSise: 'Courier New', Courier, monospace;
+    --capaOscura: #00000044;
+    --options: #a5a5a5;
+}
+
+
+.homeCont {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../../assets/pokemon_collage.png");
+
+    color: rgb(255, 255, 255);
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 10px;
+
+}
+
+.rabarra {
+
+    margin-top: 50px;
+    display: flex;
+
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 20px;
+
+}
+.rabarra h1{
+
+ margin-left: 2%;
+
+ font-size: 50px;
+}
+
+.filtAndOrd {
+    display: flex;
+
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 20px;
+
+    margin: auto 5% auto auto;
+}
+
+.listita {
+
+    background-color: #ffffff;
+    margin: auto 5px;
+
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.pagiCont {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+.toma {
+
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 20px;
+}

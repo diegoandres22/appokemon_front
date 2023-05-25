@@ -1,0 +1,79 @@
+.atrascont, .imgtarget{
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 20px;
+    color: aliceblue;
+    width: 300px;
+}
+
+.error {
+
+    color: red;
+    text-shadow: 0 0 2px black;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.crearcont {
+    display: flex;
+}
+
+.crear {
+    background: transparent;
+    display: flex;
+    border: none;
+    height: 80px;
+    width: 200px;
+    background: url("./../../assets/crear.png");
+    background-size: cover;
+    cursor: pointer;
+    transition: .5s;
+    margin-left: 25%;
+}
+
+.crear:disabled {
+    opacity: .3;
+    transform: scale(.8);
+    cursor: no-drop;
+}
+
+
+
+.crear:hover {
+    margin-top: 5%;
+    transform: scale(1.3);
+}
+
+.tiposform {
+    
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+
+.targetf {
+    display: flex;
+    flex-direction: row;
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: #f0f8ff44;
+    border-radius: 30px;
+}
+
+.targetimg {
+    display: flex;
+    flex-direction: column;
+}
+
+.formall {
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    margin: auto auto auto 7%;
+
+
+}

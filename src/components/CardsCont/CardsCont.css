@@ -1,0 +1,9 @@
+.cardCont{
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}

@@ -1,0 +1,230 @@
+:root {
+    --fontSise: 'Courier New', Courier, monospace;
+    --capaOscura: #00000044;
+    --capaClara: #ffffff99;
+}
+
+.landinContent {
+
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(var(--capaOscura), var(--capaOscura)), url("../../assets/landin.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: var(--fontSise);
+    display: flex;
+    font-size: large;
+    overflow: hidden;
+}
+
+.start {
+    width: 55vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.imgTitle {
+    background: url("../../assets/titklepng.png");
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+
+}
+
+.data {
+
+    background-color: var(--capaClara);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.home {
+    text-decoration: none;
+    border: 4px solid #0400ff;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    font-family: var(--fontSise);
+    font-size: large;
+    font-weight: 900;
+
+}
+
+.end {
+    width: 35vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--capaClara);
+    margin: auto 40px auto auto;
+    border-radius: 10px;
+}
+
+.switch {
+    display: flex;
+    justify-content: space-around;
+}
+
+.formu {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label {
+    margin: 10px auto;
+}
+
+.boton {
+
+    border: 4px solid #0400ff;
+    background-color: yellow;
+    color: black;
+    margin: 10px;
+    border-radius: 20px;
+    width: auto;
+    height: 30px;
+    margin: 15px auto;
+
+}
+
+.btnswitch {
+
+    background: transparent;
+    border: none;
+    color: #0400ff;
+
+    font-family: var(--fontSise);
+    font-size: large;
+    font-weight: 900;
+    cursor: pointer;
+    text-shadow: 0 0 1px rgb(5, 5, 5);
+}
+
+.regist {
+
+    background: transparent;
+    display: flex;
+    border: none;
+    height: 80px;
+    width: 200px;
+    background: url("./../../assets/Registrar.png");
+    background-size: cover;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.regist:disabled {
+    opacity: .3;
+    transform: scale(.8);
+    cursor: no-drop;
+}
+
+
+
+.regist:hover {
+    margin-top: 5%;
+    transform: scale(1.3);
+}
+
+.inici {
+
+    background: transparent;
+    display: flex;
+    border: none;
+    height: 80px;
+    width: 200px;
+    background: url("./../../assets/iniciar.png");
+    background-size: cover;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.inici:disabled {
+    opacity: .3;
+    transform: scale(.8);
+    cursor: no-drop;
+}
+
+
+
+.inici:hover {
+    margin-top: 5%;
+    transform: scale(1.3);
+}
+
+.comencont {
+
+
+    height: 90px;
+    border-radius: 100px;
+    display: flex;
+
+}
+
+.comen {
+
+    background: transparent;
+    display: flex;
+    border: none;
+    height: 100px;
+    width: 250px;
+    background: url("./../../assets/comenzar.png");
+    background-size: cover;
+    cursor: pointer;
+    transition: .5s;
+    margin: auto;
+    animation: tiemble 3s linear infinite;
+
+}
+
+.comen:hover {
+
+    height: 150px;
+    width: 300px;
+}
+
+
+@keyframes tiemble {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: scale(1.1) rotate(10deg);
+        
+    }
+
+    50% {
+        transform:translateY(10px) rotate(0deg);
+    }
+
+    75% {
+        transform:scale(1.1) rotate(-10deg);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

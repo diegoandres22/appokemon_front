@@ -1,0 +1,49 @@
+:root {
+    --fontSise: 'Courier New', Courier, monospace;
+    --capaOscura: #00000044;
+    --options: #00fcc5;
+}
+
+
+.pagCont {
+    display: flex;
+    width: 200px;
+    height: 30px;
+    justify-content: space-between;
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 2%;
+}
+
+.pag {
+    border: 2px solid rgb(255, 255, 255);
+    height: 15px;
+    width: 12px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+    padding-left: 2px;
+    border-radius: 5px;
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.btndis {
+
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: .1s;
+    text-shadow: 0 0 10px #00fcc5, 0 0 10px #00fcc5, 0 0 10px #00fcc5, 0 0 10px #000000;
+}
+
+.btndis:hover {
+    color: aliceblue;
+    text-shadow: 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000 ;
+    transform: scale(1.2);
+}

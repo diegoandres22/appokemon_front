@@ -1,0 +1,44 @@
+.searcont {
+    display: flex;
+}
+
+.searbar {
+    background: transparent;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 15px 10px 0 0;
+    color: rgb(255, 255, 255);
+
+}
+
+.searcontbut {
+    cursor: pointer;
+    border-radius: 50%;
+
+    border: 2px solid black;
+    width: 42px;
+    height: 42px;
+    background-image: linear-gradient(to top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #000000, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+    /* transform: rotate(-45deg); */
+    
+    transform:  scale(1);
+}
+.searcontbut :hover{
+    
+    transform: scale(1.5);
+}
+
+.searbut {
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: url("./../../../assets/search-alt-2-regular-24.png");
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transform:  scale(1.7);
+}
+
+/* ; */

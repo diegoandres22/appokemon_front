@@ -1,0 +1,57 @@
+:root {
+    --fondoCarta: rgba(81, 255, 226, 0.336);
+    --fontSise: 'Courier New', Courier, monospace;
+}
+
+.linkcarta {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 2% auto;
+    border-radius: 50%;
+
+}
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    background-color: var(--fondoCarta);
+    text-align: center;
+    border-radius: 40px;
+    margin:0 20px;
+    font-family: var(--fontSise);
+    font-weight: 900;
+    font-size: 20px;
+    text-shadow: 0 0 10px black, 0 0 10px black;
+    transition: .2s;
+    box-shadow: 0 0 20px var(--fondoCarta), 0 0 10px var(--fondoCarta);
+}
+
+.carta:hover {
+    box-shadow: 0 0 30px black, 0 0 20px black;
+}
+
+.imgCart {
+    height: 30vh;
+}
+
+.titleCart {
+    font-size: 30px;
+
+}
+.pe {
+    height: 2px;
+}
+.tipos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tip{
+top: 0;
+    border: 2px solid #111;
+    margin: 1px 2px;
+    border-radius: 5px;
+    
+}
