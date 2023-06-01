@@ -149,6 +149,7 @@ const rootReducer = (state = initialState, { type, payload }) => {
             }
             return {
                 ...state,
+                page: 1,
                 pokemonsFyO: pokefiltred
 
             };

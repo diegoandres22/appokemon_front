@@ -1,5 +1,6 @@
 import "./Form.css"
 
+import axios from "axios";
 import { Link } from "react-router-dom"
 import { useState } from "react";
 import Validation from './../../components/Validations/Validations'
@@ -40,12 +41,13 @@ const Form = () => {
             [event.target.name]: event.target.value
         }))
     }
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
 
         event.preventDefault();
+
         dispatch(postPokemon(newPokemon))
+
         dispatch(getPokemons())
-        alert('Pokemon creado exitosamente')
         setNewPokemon({
             nombre: '',
             imagen: '',
@@ -58,8 +60,8 @@ const Form = () => {
             tipos: []
         })
 
-
     }
+
     const handleTypes = (event) => {
         setNewPokemon({
             ...newPokemon,

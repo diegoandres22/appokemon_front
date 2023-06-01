@@ -67,11 +67,23 @@ export const getPokemonByName = (name) => {
 
 export const postPokemon = (pokemon) => {
     return async () => {
-        const post = await axios.post(`/pokemon/add`, pokemon);
-        console.log(post);
-        return post;
-    };
+
+        try {
+            const post = await axios.post(`/pokemon/add`, pokemon);
+            console.log(post);
+
+            if (post.data.id) {
+                alert("Pokemon creado exitosamente")
+            }
+            return post;
+
+        } catch (error) {
+            alert("No se creó el pokemon")
+        }
+
+    }
 };
+
 
 export const deletePokemon = (idPokemon) => {
     return async () => {
